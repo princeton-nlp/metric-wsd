@@ -1,5 +1,5 @@
 # MetricWSD
-Implementation of the paper Non-Parametric Few-Shot Learning for Word Sense Disambiguation
+Implementation of the paper: Non-Parametric Few-Shot Learning for Word Sense Disambiguation.
 
 ## Citation
 ```
