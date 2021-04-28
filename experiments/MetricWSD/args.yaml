@@ -1,14 +1,14 @@
 accumulate_grad_batches: 5
-args_path: /n/fs/nlp-hc22/metric-wsd/experiments/MetricWSD/args.yaml
+args_path: metric-wsd/experiments/MetricWSD/args.yaml
 avg_num_supports: 3
 batch_size: 1
-ckpt_dir: /n/fs/nlp-hc22/metric-wsd/experiments/MetricWSD
+ckpt_dir: metric-wsd/experiments/MetricWSD
 debug: false
 dist: dot
 episodic: true
 episodic_k: 40
 filename: model-epoch={epoch:03d}-f1={f1:.1f}.pt
-filepath: /n/fs/nlp-hc22/metric-wsd/experiments/MetricWSD/model-epoch={epoch:03d}-f1={f1:.1f}.pt
+filepath: metric-wsd/experiments/MetricWSD/model-epoch={epoch:03d}-f1={f1:.1f}.pt
 freeze_context_enc: false
 gpu_stats: false
 gpus: 1
