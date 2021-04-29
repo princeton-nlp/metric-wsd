@@ -1,6 +1,8 @@
 # MetricWSD
 Implementation of the paper: [Non-Parametric Few-Shot Learning for Word Sense Disambiguation](https://arxiv.org/abs/2104.12677).
 
+<img src="images/tsne.png" width="800"/>
+
 ## Dependencies
 We use the following training framework and versions. Note that the newer versions of the PyTorch Lightning training framework have compatibility breaking changes. Please make sure to use the version below.
 
@@ -18,7 +20,7 @@ pip install -r requirements.txt
 ```
 
 ## Dataset
-We use the [WSD Evaluation Framework](http://lcl.uniroma1.it/wsdeval/) to train and evaluate our models. Note that the `Scorer.java` in the WSD Framework needs to be compiled, with the `Scorer.class` file in the original directory (Evaluation_Datasets) of the Scorer file.
+We use the [WSD Evaluation Framework](http://lcl.uniroma1.it/wsdeval/) to train and evaluate our models. Note that the `Scorer.java` in the WSD Framework needs to be compiled, with the `Scorer.class` file in the original directory (`Evaluation_Datasets`) of the Scorer file.
 
 ## Specifying Paths
 Edit the `metric_wsd/config.py` file to specify project level configurations such as the root directory path of the repo (`ROOT_DIR`) and the data directories.
