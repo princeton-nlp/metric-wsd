@@ -60,8 +60,8 @@ The model directory (`MODEL_DIR_NAME`) should be placed under `metric_wsd/experi
 ## Checkpoint
 The provided checkpoint folder `MetricWSD` contains the best model `best.ckpt` alongside with the arguments used and the prediction files. Set `MODEL_DIR_NAME=MetricWSD` and `MODEL_CKPT_NAME=best.ckpt` in the evaluation script to rerun evaluation.
 
-## Questions?
-If you have any questions related to the code or the paper, please reach out to Howard Chen (howardchen@cs.princeton.edu) or Mengzhou Xia (mengzhou@cs.princeton.edu).
+## Contact
+Please email Howard Chen (howardchen@cs.princeton.edu) or Mengzhou Xia (mengzhou@cs.princeton.edu) for questions or feedback.
 
 ## Citation
 ```
