@@ -12,7 +12,7 @@ import pytorch_lightning as pl
 from metric_wsd.models.context_encoder import get_subtoken_indecies, extend_span_offset
 from metric_wsd.utils.utils import sample_examples, load_glosses
 from metric_wsd.config import Config
-from metric_wsd.baselines.wsd_biencoders.wsd_models.util import load_data, load_wn_senses
+from metric_wsd.utils.data_utils import load_data, load_wn_senses
 
 config = Config()
 
