@@ -52,7 +52,7 @@ python -m metric_wsd.run \
 Arguments:
 
 * `--model-type`: we provide both the proposed MetricWSD model `cbert-proto` and the baseline model `cbert-linear`.
-* `--episodic`: whether to use episodic training. Should be turned on when usiing `cbert-proto`.
+* `--episodic`: whether to use episodic training. Should be turned on when using `cbert-proto`.
 * `--dist`: dot product (`dot`) or L2 distance (`l2`) when calculating the scoring function between the query and the support.
 * `--ks_support_kq_query`: a list of 3 numbers specifying 1) the max number of supports to select per sense, 2) the max number of queries for each sense, and 3) the max number of senses per word. E.g., `5 50 5` means for each word, the eposide will contain at most 5 supports, at most 50 queries per sense, and at most 5 senses per word. This is slightly differnet from the sampling strategy described in the paper while achieving the same effect. See argument `--episodic_k` and `--support_query_ratio` for more details.
 * `--max_inference_supports`: Maximum number of training examples to use as support during evaluation.
