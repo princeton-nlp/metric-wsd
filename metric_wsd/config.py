@@ -10,7 +10,7 @@ class Config:
     BERT_DIM = 768
 
     # paths
-    ROOT_DIR = Path('/n/fs/nlp-hc22/')
+    ROOT_DIR = Path('path/to/the/folder/that/contains/the/repo')
     PROJECT_DIR = ROOT_DIR / PROJECT_NAME
     EXP_DIR = PROJECT_DIR / 'experiments'
     TMP_DIR = PROJECT_DIR / 'tmp'
