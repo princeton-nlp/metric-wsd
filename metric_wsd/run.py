@@ -248,7 +248,7 @@ if __name__ == '__main__':
     parser.add_argument("--max_queries", type=int, default=20)
     parser.add_argument("--avg_num_supports", type=int, default=3)
                     
-    parser.add_argument("--dist", type=str, default="dot", help="[dot | l2 | text_cls | text_span | text_marker]")
+    parser.add_argument("--dist", type=str, default="dot", help="[dot | l2]")
     parser.add_argument("--support_reduction", type=str, default="score", help="[score | prob]")
     parser.add_argument("--scoring_func", type=str, default=None, help="[activation | bilinear]")
     args = parser.parse_args()
