@@ -57,6 +57,15 @@ Arguments:
 * `--ks_support_kq_query`: a list of 3 numbers specifying 1) the max number of supports to select per sense, 2) the max number of queries for each sense, and 3) the max number of senses per word. E.g., `5 50 5` means for each word, the eposide will contain at most 5 supports, at most 50 queries per sense, and at most 5 senses per word. This is a slightly differnet implementation from the sampling strategy described in the paper but achieves the same result. See argument `--episodic_k` and `--support_query_ratio` for more details of the paper implementation.
 * `--max_inference_supports`: Maximum number of training examples to use as support during evaluation.
 
+We provide two ways to control how the examples of a word to be split into the support set and the query set. The above is *Max Query* and the other option is *Ratio Split*. We present the *Ratio Split* sampling strategy in the paper, but *Max Query* achieves the same performance and is more stable (recommended).
+
+Other available arguments (not shown in the above example):
+
+* `--episodic_k`: the maximum number of examples to sample when use the *Ratio Split* strategy.
+* `--support_query_ratio`: percentage of examples to be split into the support set. 
+* `--sampling`: `balance` or `uniform`.
+* `--mix-strategy`: whether or not to switch between *Max Query* and *Split Ratio*.
+* `--sample-strategy-threshold`: Threshold on word frequency. Lower than threshold uses *Ratio Split*. Higher than threshold uses *Max Query* (only if `mix-strategy` is specified).
 
 ## Run Evaluation
 To run evaluation on `SE07` or `ALL`, go the the root of the repo and run:
