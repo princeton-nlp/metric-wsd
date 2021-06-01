@@ -27,7 +27,7 @@ pip install -r requirements.txt
 ```
 
 ## Dataset
-We use the [WSD Evaluation Framework](http://lcl.uniroma1.it/wsdeval/) to train and evaluate our models. Note that the `Scorer.java` in the WSD Framework needs to be compiled, with the `Scorer.class` file in the original directory (`Evaluation_Datasets`) of the Scorer file.
+We use the [WSD Evaluation Framework](http://lcl.uniroma1.it/wsdeval/) to train and evaluate our models. Note that the `Scorer.java` in the WSD Framework needs to be compiled, with the `Scorer.class` file in the original directory (`Evaluation_Datasets`) of the Scorer file. Files such as word to sense key mapping and the gloss file are provided in the `resources` directory. You can move them to under `data/WSD_Evaluation_Framework/Data_Validation/` or modify the paths in the config file described below.
 
 ## Specifying Paths
 Edit the `metric_wsd/config.py` file to specify project level configurations such as the root directory path of the repo (`ROOT_DIR`) and the data directories. We recommend you place the downloaded `WSD_Evaluation_Framework` folder under `metric_wsd/data/`.
